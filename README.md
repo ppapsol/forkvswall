@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ForkVsWall ($FVW) - Official Website
 
-## Getting Started
+The most determined meme energy on Solana. Break through walls and stack wins.
 
-First, run the development server:
+## 🎨 Features
+
+- ✨ Modern landing page design inspired by saxaboom.com
+- 🍴 Fork logo prominently displayed
+- 💎 Silver/gray gradient theme matching the fork
+- 📊 Complete tokenomics breakdown
+- 🗺️ 7-phase roadmap
+- 🌊 Smooth animations and transitions
+- 📱 Fully responsive design
+- 🚫 No backend required - pure static site
+
+## 🛠️ Technologies
+
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **React Hooks** (IntersectionObserver for scroll animations)
+
+## 📂 Project Structure
+
+```
+forkvswall-story/
+├── app/
+│   ├── components/
+│   │   ├── Navbar.tsx           # Navigation with logo & links
+│   │   ├── Hero.tsx             # Hero section with fork image
+│   │   ├── TokenomicsCard.tsx   # Tokenomics display cards
+│   │   └── RoadmapPhase.tsx     # Roadmap phase items
+│   ├── globals.css              # Global styles + animations
+│   ├── layout.tsx               # Root layout + SEO
+│   └── page.tsx                 # Main landing page
+├── public/
+│   └── fork-logo.png            # Fork logo (153KB)
+├── next.config.js               # Static export config
+├── tailwind.config.ts           # Tailwind configuration
+└── package.json                 # Dependencies
+```
+
+## 🚀 Installation and Running
+
+### 1. Install Dependencies
+
+```bash
+cd forkvswall-story
+npm install
+```
+
+### 2. Start Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in your browser: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 🎯 Page Sections
 
-To learn more about Next.js, take a look at the following resources:
+1. **Hero** - Main introduction with fork image and CTAs
+2. **About** - The story of the fork vs wall
+3. **Tokenomics** - 6 distribution cards (Burn, Presale, Liquidity, Marketing, Airdrop, Team)
+4. **Roadmap** - 7 phases from community building to moon
+5. **Community** - Social links and call to action
+6. **Footer** - Navigation and disclaimer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design Details
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Font**: Geist Sans (modern, clean typography)
+- **Color Palette**: 
+  - Background: Black (#000000)
+  - Primary: Gray gradients (#D1D5DB to #6B7280)
+  - Accents: Silver/metallic tones matching fork logo
+- **Animations**: 
+  - Floating fork animation (6s loop)
+  - Hover effects on cards
+  - Smooth scroll transitions
+- **Layout**: Modern landing page inspired by saxaboom.com
 
-## Deploy on Vercel
+## 📝 Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Fully frontend, no API calls
+- Ready for static export
+- SEO metadata included
+- Accessibility standards compliant
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌟 Inspiration
+
+Inspired by saxaboomsol.com
+
+## 🌐 Domain
+
+**forkvswall.xyz**
+
+---
+
+**© 2026 ForkVsWall** - A story about persistence.
