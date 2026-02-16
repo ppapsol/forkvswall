@@ -4,89 +4,107 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 pt-20 relative overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0" style={{
-        background: 'radial-gradient(circle at 50% 50%, rgba(55, 65, 81, 0.3), rgba(0, 0, 0, 0.8))'
-      }}></div>
+    <section className="relative min-h-screen flex items-center justify-center px-6 pt-20 overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gray-700 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gray-600 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        </div>
+      </div>
       
       {/* Content */}
-      <div className="relative z-10 flex-1 text-center lg:text-left max-w-2xl">
-        <h1 className="text-6xl md:text-8xl font-black mb-8 tracking-tight">
-          <span className="block" style={{
-            background: 'linear-gradient(to right, #E5E7EB, #9CA3AF, #6B7280)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text'
-          }}>
-            FORKVSWALL
-          </span>
-          <span className="block text-4xl md:text-5xl mt-4" style={{ color: '#9CA3AF' }}>
-            ($FVW)
-          </span>
-        </h1>
-        
-        <p className="text-xl md:text-2xl mb-8 text-gray-300 leading-relaxed">
-          The most determined meme energy on Solana. 
-          <br />
-          <span className="text-gray-400">Break through walls and stack wins.</span>
-        </p>
+      <div className="relative z-10 max-w-7xl mx-auto w-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left: Text Content */}
+          <div className="text-center lg:text-left space-y-8">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-800/50 border border-gray-700 rounded-full text-sm backdrop-blur-sm">
+              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+              <span className="text-gray-300">Live on Solana</span>
+            </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-          <a 
-            href="#tokenomics" 
-            className="px-8 py-4 rounded-full text-lg font-bold transition-all transform hover:scale-105"
-            style={{
-              background: 'linear-gradient(to right, #6B7280, #374151)',
-              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.5)'
-            }}
-          >
-            See Tokenomics
-          </a>
-          <a 
-            href="#community" 
-            className="px-8 py-4 rounded-full text-lg font-bold transition-all transform hover:scale-105"
-            style={{
-              background: 'transparent',
-              border: '2px solid #6B7280'
-            }}
-          >
-            Join Community
-          </a>
-        </div>
+            {/* Main Heading */}
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-7xl font-black leading-tight">
+                <span className="block" style={{
+                  background: 'linear-gradient(135deg, #E5E7EB 0%, #9CA3AF 50%, #6B7280 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
+                }}>
+                  FVSW
+                </span>
+                <span className="block text-white mt-2">ForkVsWall</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-400 font-light max-w-xl">
+                Breaking barriers, building wealth. The revolutionary memecoin on Solana.
+              </p>
+            </div>
 
-        <div className="flex items-center gap-6 justify-center lg:justify-start text-sm text-gray-500">
-          <div>
-            <span className="block text-2xl font-bold text-white">1B</span>
-            <span>Total Supply</span>
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-4 py-6 max-w-xl">
+              <div className="text-center">
+                <div className="text-2xl md:text-3xl font-bold text-white">1B</div>
+                <div className="text-sm text-gray-500">Total Supply</div>
+              </div>
+              <div className="text-center border-x border-gray-800">
+                <div className="text-2xl md:text-3xl font-bold text-white">20%</div>
+                <div className="text-sm text-gray-500">Burned</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl md:text-3xl font-bold text-white">25%</div>
+                <div className="text-sm text-gray-500">Presale</div>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a 
+                href="#tokenomics" 
+                className="px-8 py-4 bg-white text-black rounded-lg text-lg font-bold hover:bg-gray-200 transition-all transform hover:scale-105 shadow-lg text-center"
+              >
+                View Tokenomics
+              </a>
+              <a 
+                href="#community" 
+                className="px-8 py-4 bg-transparent border-2 border-gray-700 text-white rounded-lg text-lg font-bold hover:bg-gray-900 transition-all transform hover:scale-105 text-center"
+              >
+                Join Community
+              </a>
+            </div>
           </div>
-          <div className="w-px h-12 bg-gray-700"></div>
-          <div>
-            <span className="block text-2xl font-bold text-white">Presale</span>
-            <span>Available</span>
-          </div>
-          <div className="w-px h-12 bg-gray-700"></div>
-          <div>
-            <span className="block text-2xl font-bold text-white">20%</span>
-            <span>Burned</span>
+
+          {/* Right: Logo */}
+          <div className="flex items-center justify-center">
+            <div className="relative w-80 h-80 md:w-96 md:h-96">
+              {/* Glow Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full filter blur-3xl opacity-30 animate-pulse"></div>
+              
+              {/* Logo */}
+              <div className="relative w-full h-full animate-float">
+                <Image 
+                  src="/fork-logo.png" 
+                  alt="FVSW Logo" 
+                  fill
+                  className="object-contain drop-shadow-2xl"
+                  priority
+                  sizes="(max-width: 768px) 320px, 384px"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Fork Image */}
-      <div className="relative z-10 flex-1 flex items-center justify-center mt-12 lg:mt-0">
-        <div className="relative w-64 h-64 md:w-96 md:h-96 animate-float" style={{
-          filter: 'drop-shadow(0 25px 50px rgba(255, 255, 255, 0.15))'
-        }}>
-          <Image 
-            src="/fork-logo.png" 
-            alt="Fork" 
-            fill
-            className="object-contain"
-            priority
-            sizes="(max-width: 768px) 256px, 384px"
-          />
-        </div>
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <a href="#about" className="flex flex-col items-center gap-2 text-gray-500 hover:text-gray-300 transition-colors">
+          <span className="text-sm">Scroll to explore</span>
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </a>
       </div>
     </section>
   );
