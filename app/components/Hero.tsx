@@ -18,12 +18,6 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Text Content */}
           <div className="text-center lg:text-left space-y-8">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-800/50 border border-gray-700 rounded-full text-sm backdrop-blur-sm">
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-              <span className="text-gray-300">Live on Solana</span>
-            </div>
-
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-black leading-tight">
