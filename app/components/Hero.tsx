@@ -27,7 +27,7 @@ export default function Hero() {
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text'
                 }}>
-                  FVSW
+                  $FVSW
                 </span>
                 <span className="block text-white mt-2">ForkVsWall</span>
               </h1>

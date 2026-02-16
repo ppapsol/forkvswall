@@ -22,7 +22,7 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-black tracking-tight text-white">FVSW</span>
+              <span className="text-xl font-black tracking-tight text-white">$FVSW</span>
               <span className="text-xs text-gray-500 -mt-1">ForkVsWall</span>
             </div>
           </a>
