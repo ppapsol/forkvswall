@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   description: "The most determined meme energy on Solana. Break through walls and stack wins. $FVW - A story about persistence.",
   metadataBase: new URL('https://forkvswall.xyz'),
   keywords: ['ForkVsWall', 'FVW', 'memecoin', 'Solana', 'crypto', 'meme', 'fork', 'wall'],
+  icons: {
+    icon: '/fork-logo.png',
+    apple: '/fork-logo.png',
+  },
   openGraph: {
     title: "ForkVsWall ($FVW) - Break Through Every Wall",
     description: "The most determined meme energy on Solana. Break through walls and stack wins.",
@@ -24,11 +28,13 @@ export const metadata: Metadata = {
     siteName: 'ForkVsWall',
     locale: 'en_US',
     type: 'website',
+    images: ['/fork-logo.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: "ForkVsWall ($FVW)",
     description: "The most determined meme energy on Solana. Break through walls and stack wins.",
+    images: ['/fork-logo.png'],
   },
 };
 
