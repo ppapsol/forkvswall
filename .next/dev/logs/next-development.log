@@ -1,0 +1,18 @@
+[00:00:00.460] Server  LOG     ✓ Ready in 314ms
+[00:00:02.978] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:58.911] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:50.726] Server  LOG     ✓ Compiled in 38ms
+[00:10:08.759] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.760] Server  ERROR   ⨯ "unhandledRejection:" Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.762] Server  ERROR   ⨯ "unhandledRejection: " Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.766] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.767] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.769] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.769] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.771] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.772] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.774] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.775] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.776] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.777] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/samoc/forkvswall/forkvswall-story/app'
+[00:10:08.809] Server  LOG     ✓ Compiled in 35ms
